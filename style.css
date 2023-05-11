@@ -1,0 +1,141 @@
+body {
+    background-image: url(img/fondo12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.letras {
+    text-decoration: none;
+    font-size: 120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: left;
+    height: 100%;
+    top: 20%;
+    color: aliceblue;
+}
+
+
+.letras:hover {
+    opacity: 50%;
+}
+
+button {
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;
+}
+
+.letrasp {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 400%;
+    color: aliceblue;
+}
+
+.tope {
+    background-color: #414141;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    border-color: aliceblue;
+
+}
+
+
+
+.textoa {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 160%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.seccion2 {
+    background-color: #414141;
+    opacity: 50%;
+    text-align: center;
+    padding: 20%;
+    border-radius: 20px;
+    border-color: aliceblue;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+.topeabajo {
+    background-color: #414141;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.textob {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.textob:hover {
+    opacity: 50%;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: auto;
+    position: relative;
+    top: 1%;
+    align-items: center;
+}
+
+.modal-body {
+    color: rgb(12, 12, 12);
+}
+
+.modal-header {
+    color: black;
+}
+
+.bl {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.product-image {
+    display: block;
+    margin: auto;
+    border: 0px solid black;
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    max-height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+  
+
+.carousel {
+    margin: 10%;
+    position: relative;
+}

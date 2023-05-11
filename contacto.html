@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Main.html">
+                <img src="img/perrofondo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Main.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Redes Sociales
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Instagram</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="">Facebook</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Iniciar Sesion
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade bl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="username" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Ingrese su usuario">
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Registrarse</button>
+                      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </form>
+                    <div id="alert-message"></div>
+                  </div>                  
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            background-image: url(img/fondo12.jpg);
+            color: rgb(255, 255, 255);
+        }
+
+        .modal-body {
+            color: rgb(12, 12, 12);
+        }
+
+        .modal-header {
+            color: black;
+        }
+
+        .bl {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+
+        .navbar-toggler {
+            background-color: white;
+        }
+    </style>
+    <div class="container">
+        <section class="mb-4">
+            <h2 class="text-center h1-responsive font-weight-bold my-4">Contactanos</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Si tienes alguna duda no dudes en escribirnos.</p>
+            <div class="row">
+                <div class="col-12">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Tu nombre</label>
+                                    <input type="text" id="name" name="name" class="form-control"
+                                        placeholder="Ingresa tu usuario">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Tu correo</label>
+                                    <input type="text" id="email" name="email" class="form-control"
+                                        placeholder="Ingresa tu correo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Asunto</label>
+                                    <input type="text" id="subject" name="subject" class="form-control"
+                                        placeholder="Ingresa tu asunto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="message">Tu mensaje</label>
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        placeholder="Ingresa tu mensaje" class="form-control md-textarea"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="enviarFormulario()">Enviar</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <div class="col-12 text-center">
+                    <br>
+                    <br>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Direccion</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+56999999999</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>xxxxxx@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary" onclick="getDogImage()">Perros felices por nuestra
+                fundacion</button>
+            <br>
+            <div id="dog-image">
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script crossorigin="anonymous" src="script.js"></script>
+</body>
+
+
+
+</html>

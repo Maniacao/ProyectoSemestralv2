@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayuda a un peludo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Main.html">
+                <img src="img/perrofondo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Main.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Redes Sociales
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Instagram</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="">Facebook</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Iniciar Sesion
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade bl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="username" name="username"
+                                placeholder="Ingrese su usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Ingrese su contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </form>
+                    <div id="alert-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="product-select">Selecciona un producto:</label>
+                        <select class="form-control product-selector" id="product-select" name="product">
+                            <option value="nons" disabled selected>Elige una opción</option>
+                            <option value="producto-1">Kong</option>
+                            <option value="producto-2">Hueso de plastico</option>
+                            <option value="producto-3">Peluche de hongo</option>
+                            <option value="producto-4">Mini tunel</option>
+                            <option value="producto-5">Varita loro</option>
+                            <option value="producto-6">Torre de pelotas</option>
+                            <option value="producto-7">Mancuerna plastica</option>
+                            <option value="producto-8">Pelota plastica</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="product-container">
+                        <img src="" alt="" class="product-image">
+                        <br>
+                        <p class="product-description"></p>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="direccion">Direccion</label>
+                        <input type="text" id="direccion" name="direccion">
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center g-2">
+
+                            <label for="cboRegiones">Region</label>
+                            <select name="cboRegiones" id="cboRegiones" class="form-select mb-3 col-md-4">
+                                <option value="" disable hidden>Seleccione una opcion</option>
+                            </select>
+                            <label for="cboProvincias">Provincias</label>
+                            <select name="cboProvincias" id="cboProvincias" class="form-select mb-3 col-md-4" disabled>
+                                <option value="" disable hidden>Seleccione una opcion</option>
+                            </select>
+                            <label for="cboComunas">Comunas</label>
+                            <select name="cboComunas" id="cboComunas" class="form-select mb-3 col-md-4" disabled>
+                                <option value="" disable hidden>Seleccione una opcion</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" id="comprar-btn" class="btn btn-primary submit-btn">Comprar</button>
+                    <div id="resumen-compra"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script crossorigin="anonymous" src="script.js"></script>
+</body>
+</html>
